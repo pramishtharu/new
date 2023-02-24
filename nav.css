@@ -1,0 +1,151 @@
+*{margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+    
+/* .bg{
+    background-color: rgb(2, 2, 1);
+    border-radius: 10px;
+} */
+
+.bg li{
+    float: left;
+    list-style-type: none;
+    margin: 13px 20px;
+
+}
+.bg ul{
+    overflow: auto;
+}
+.bg li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: rgb(222, 18, 18);
+    
+
+}
+.search{
+    float: right;
+    color: aliceblue;
+    padding: 12px 75px;
+}
+.bg input{
+    border: 2px solid rgb(220, 12, 12);
+    border-radius: 10px;
+    padding: 3px 27px;
+    width: 140px;
+    color: rgb(151, 155, 66);
+}
+.bg li a:hover{
+    color: rgb(18, 72, 198);}
+img{
+    width: 21%;
+
+    height: 200px;
+}
+.background{
+    color: aliceblue;
+    /* display: flex; */
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    /* align-items: center;  */
+    /* justify-content: center; */
+    /* border: 2px solid white; */
+}
+.header-pic{
+    /* border: 2px solid rgb(212, 34, 34); */
+    background-image: url(IMG20220606103854-removebg-preview.png);
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* font-size: 3rem; */
+
+} .front{
+    margin:30px 0px 20px 0px;
+
+}
+.hello{
+    margin:10px 0px 10px 0px;
+    font-size: 3rem;
+
+}
+.me{
+    margin:0px 0px 20px 0px;
+    font-size: 3rem;
+
+} 
+.second-section{
+    background-repeat: no-repeat ;
+    width: 100%;
+height: 284px;
+/* 
+    background-image: url(IMG20220606103854-removebg-preview.png);
+    width: 100%;
+    height: 200px; */
+}
+.aboutme{
+    color: white;
+    /* display: flex; */
+}
+.second-section{display: flex;
+align-items: center;
+
+}
+.about{
+    font-size: +60px;
+    justify-content: center;
+}
+.details{
+    font-size: 30px;
+}
+.tab-titles{
+    display: flex;
+    
+}
+
+
+ /* tab  */
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style:  none; 
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:#b54769 ;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+        display: block;}

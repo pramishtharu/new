@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header class="header-pic">
+        <nav class="bg">
+            <ul>
+        <li><a href="#"> Home</a></li>
+        <li><a href="#">About</a> </li>
+        <li><a href="#">Contact Us</a> </li>
+        <li><a href="#">Services</a> </li>
+        <div class="search">
+            <input type="search" value="Search Here" id="search">
+        </div>
+    </ul>
+    </nav>
+    <div class="background">
+
+        <!-- <img src="IMG20220606103854-removebg-preview.png" alt="This is my picture"> -->
+        <div class="front">Front Web Designer</div>
+        
+        <div class="hello">Hello World!!!!!!! </div>
+        
+        <div class="me">I Am Parmish Tharu <br> From Nepal</div>
+    </div>
+    </header>
+    <div class="second-section">
+        <img src="IMG20220606103854-removebg-preview.png" alt="this issss second section image">
+        <div class="aboutme">
+            
+            <div class="about">About Me</div>
+            <div class="details">My name is Parmish Tharu. I am living in Butwal, Devinagar-11 but i lives in Kapilvastu, BuddhaBhumi-02, Bakdariya. I am studying in Crimson Technical College in Six semester.
+            </div>
+            </div>
+        </div><div class="action1">
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+    <div class="tab-contents active-tab" id="skills">
+        <ul>
+            <li><span>UI/Ux</span><br>Designing Websites/Apps</li>
+            <li><span>Web Development</span><br>Web app Developments</li>
+            <li><span>C programmer</span><br>fluency on C programming language</li>
+        </ul>
+    </div>
+    <div class="tab-contents" id="experience">
+        <ul>
+            <li><span>2023 - Current</span><br>UI/UX Designing trainer</li>
+            <li><span>2020 - 2022</span><br>Web app Developer</li>
+            <li><span>2019 - 2020</span><br>C programmer</li>
+        </ul>
+    </div>
+    <div class="tab-contents" id="education">
+        <ul>
+            
+            <li><span>2075 - 2079</span><br>Crimson Technical COllege, Butwal</li>
+            <li><span>2075</span><br>SEE from Residential English BOarding School, Kapilvastu/li>
+            </ul>
+        </div> 
+    </div>
+        <!-- action -->
+        <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        </script>
+</body>
+</html>
